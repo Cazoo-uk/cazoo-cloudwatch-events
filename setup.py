@@ -1,10 +1,17 @@
 from distutils.core import setup
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
-  name = 'cazoo-cloudwatch-events',
-  packages = ['cazoo-cloudwatch-events'],
-  version = '0.1',
+  name = 'cazoo_cloudwatch_events',
+  packages = ['cazoo_cloudwatch_events'],
+  version = '0.1.6',
   license='MIT',
-  description = 'Library for Cloudwatch Events common functions',
+  description = 'Cazoo common library for Cloudwatch Events',
+  long_description=long_description,
+  long_description_content_type="text/markdown",
   author = 'Raul Herranz',
   author_email = 'raul.herranz@cazoo.co.uk',
   url = 'https://gitlab.com/raulherranz/cazoo-cloudwatch-events/',

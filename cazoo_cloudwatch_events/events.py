@@ -1,14 +1,15 @@
 import boto3
 from typing import List
+import boto3
 
-def put_events(events, log):
+def put_events(events, log, client=boto3.client("events", region_name='eu-west-1')):
     ''' Function to push events to CW Events
         and control possible errors
     '''
 
     cloudwatch_client = boto3.client('events', 'eu-west-1')
     response = cloudwatch_client.put_events(
-        Events=events
+        Entries=events
     )
     failed_entry_count: int = response.get("FailedEntryCount")
     if failed_entry_count != 0:
