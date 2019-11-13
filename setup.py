@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 setup(
   name = 'cazoo_cloudwatch_events',
   packages = ['cazoo_cloudwatch_events'],
-  version = '0.1.6',
+  version = '0.0.2',
   license='MIT',
   description = 'Cazoo common library for Cloudwatch Events',
   long_description=long_description,
@@ -15,11 +15,10 @@ setup(
   author = 'Raul Herranz',
   author_email = 'raul.herranz@cazoo.co.uk',
   url = 'https://gitlab.com/raulherranz/cazoo-cloudwatch-events/',
-#   download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',
   keywords = ['Cazoo', 'Cloudwatch', 'events', 'put_events'],
   install_requires=[
           'boto3',
-          'typing',
+          'cazoo-logger'
       ],
   classifiers=[
     'Development Status :: 4 - Beta',
