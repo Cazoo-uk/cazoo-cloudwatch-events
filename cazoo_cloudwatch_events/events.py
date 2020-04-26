@@ -13,6 +13,7 @@ def put_events(
     """
 
     response = client.put_events(Entries=Entries)
+    
     failed_entry_count: int = response.get("FailedEntryCount")
     if failed_entry_count != 0:
         event_logs = response.get("Entries")
@@ -21,3 +22,5 @@ def put_events(
             extra=event_logs,
         )
         raise Exception("Did not push all required events to cloudwatch")
+
+    return response 
