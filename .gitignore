@@ -125,5 +125,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-GET | 302 | 259 ms | GitHub.com
-GET | 200 | 225 ms

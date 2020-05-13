@@ -14,7 +14,7 @@ setup(
   long_description_content_type="text/markdown",
   author = 'Raul Herranz',
   author_email = 'raul.herranz@cazoo.co.uk',
-  url = 'https://gitlab.com/raulherranz/cazoo-cloudwatch-events/',
+  url = 'https://github.com/Cazoo-uk/cazoo-cloudwatch-events/',
   keywords = ['Cazoo', 'Cloudwatch', 'events', 'put_events'],
   install_requires=[
           'boto3',
