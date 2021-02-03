@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 setup(
   name = 'cazoo_cloudwatch_events',
   packages = ['cazoo_cloudwatch_events'],
-  version = '0.1.11',
+  version = '0.1.12',
   license='MIT',
   description = 'Cazoo common library for Cloudwatch Events',
   long_description=long_description,
