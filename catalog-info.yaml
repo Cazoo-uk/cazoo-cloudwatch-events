@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: cazoo-cloudwatch-events
+  description: Publish CloudWatch events
+  tags:
+    - python
+spec:
+  type: library
+  lifecycle: production
+  owner: group:principals
